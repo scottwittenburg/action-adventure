@@ -13,4 +13,6 @@ jobs:
     - run: |
         echo ${{ github.event.ref }} has been pushed
         echo sha before: ${{ github.event.before }}
-        echo sha after: ${{ github.event.before }}
+        echo sha after: ${{ github.event.after }}
+        echo latest commit sha: ${{ github.event.commits[0][id] }}
+        echo latest commit sha: ${{ github.event.commits[0][id] }}
