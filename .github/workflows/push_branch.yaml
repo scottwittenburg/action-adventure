@@ -1,0 +1,16 @@
+name: Push Branch
+
+# trigger on pushes to main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  push_job:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo ${{ github.event.ref }} has been pushed
+        echo sha before: ${{ github.event.before }}
+        echo sha after: ${{ github.event.before }}
