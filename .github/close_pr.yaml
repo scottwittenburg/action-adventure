@@ -1,5 +1,7 @@
 name: Close Pull Request
 
+# Add a comment I won't really care about in the end
+
 # only trigger on pull request closed events
 on:
   pull_request:
