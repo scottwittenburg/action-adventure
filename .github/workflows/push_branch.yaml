@@ -15,4 +15,4 @@ jobs:
         echo sha before: ${{ github.event.before }}
         echo sha after: ${{ github.event.after }}
         echo latest commit sha: ${{ github.event.commits[0][id] }}
-        echo latest commit sha: ${{ github.event.commits[0][id] }}
+        echo latest commit message: ${{ github.event.commits[0][message] }}
